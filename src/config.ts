@@ -1,1 +1,4 @@
-export const BACKEND_URL = 'https://aimockbe.telzac.site';
+import dotenv from 'dotenv';
+dotenv.config({ path: '../.env' });
+
+export const BACKEND_URL = process.env.BACKEND_URL;
